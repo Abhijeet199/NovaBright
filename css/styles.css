@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300&display=swap');
+
+* {
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    background: rgb(1, 0, 2);
+    color: #fff;
+    overflow: hidden;
+}
+
+.primary-btn {
+    color: #fff;
+    padding: .5rem 1rem;
+    text-align: center;
+    background-color: rgb(155, 24, 179);
+    border: none;
+    height: 2.4rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: background-color .5s ease-in-out;
+}
+
+.primary-btn:hover {
+    background-color: rgb(36, 28, 143);
+}
+
+.secondary-btn {
+    color: #fff;
+    padding: .5rem 1rem;
+    text-align: center;
+    border: 2px solid rgb(155, 24, 179);
+    height: 2.4rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: border .5s ease-in-out;
+}
+
+.secondary-btn:hover {
+    border: 2px solid rgb(80, 72, 201);
+}
+
+
+
+
+#wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+#left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+}
+
+#signin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin-bottom: 1rem;
+}
+
+#signin form {
+    width: 80%;
+    margin-bottom: 3rem;
+}
+
+
+
+#signin img {
+    width: 250px;
+    margin-bottom: 4rem;
+}
+
+#signin label {
+    color: #fff;
+    font-size: .9rem;
+    line-height: 2rem;
+}
+
+#signin .text-input {
+    color: #ccc;
+    margin-bottom: 1.3rem;
+    width: 100%;
+    background: transparent;
+    border: 1px solid #777;
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+    padding: 0.5rem 1rem;
+}
+
+#signin .primary-btn {
+    width: 100%;
+}
+
+.secondary-btn,
+.or,
+.links {
+    width: 50%;
+}
+
+#signin .or {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1.2rem;
+    align-items: center;
+}
+
+#signin .or .bar {
+    flex: auto;
+    background: #777;
+    border: none;
+    height: 1px;
+}
+
+#signin .or span {
+    color: #fff;
+    padding: 0 .5rem;
+}
+
+#signin .links a {
+    display: block;
+    color: #fff;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: .9rem;
+}
+
+#main-footer {
+    color: #fff;
+    text-align: center;
+    font-size: .8rem;
+    max-width: 80%;
+    margin-top: 5rem;
+}
+#main-footer a {
+    color: rgb(196, 65, 219);
+    font-weight: 500;
+    text-decoration: underline;
+    text-align: center;
+}
+
+#main-footer span {
+    margin: auto .2rem;
+}
+
+
+#right {
+    flex: 1;
+}
+
+#showcase {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../images/bg.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.showcase-content {
+    text-align: center;
+}
+
+.showcase-content h1 {
+    font-size: 3rem;
+    font-weight: 100;
+
+}
+
+#showcase .secondary-btn {
+    font-weight: 600;
+}
+
+
+
+/* Media queris */
+
+@media (min-width: 1200px) {
+    #left {
+        flex: 4;
+    }
+
+    #right {
+        flex: 6;
+    }
+    #signin img {
+        width: 300px;
+    }
+
+}
+
+
+@media only screen and (max-width: 768px) {
+    body {
+        overflow: auto;
+    }
+    #right {
+        display: none;
+    }
+    #left {
+        padding-top: 1rem;
+        justify-content: flex-start;
+    }
+    #signin img {
+        margin-bottom: 1rem;
+    }
+    #signin form {
+        margin-bottom: 10px;
+    }
+    #signin .text-input {
+        margin-bottom: 5px;
+    }
+    #signin .primary-btn {
+        margin-top: 10px;
+    }
+    #signin .links a {
+        margin-bottom: 10px;
+    }
+    #signin .or {
+        margin-bottom: 10px;
+    }
+    .secondary-btn,
+    .or,
+    .links {
+        width: 80%;
+    }
+    #signin .secondary-btn{
+        margin-top: 10px;
+        padding: .5rem .25rem;
+        height: auto;
+    }
+
+    #main-footer {
+        margin-top: 2rem
+    }
+    #signin img {
+        width: 200px;
+    }
+
+
+}
