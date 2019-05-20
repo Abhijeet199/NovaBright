@@ -249,6 +249,8 @@ body {
     #signin img {
         width: 200px;
     }
-
+    #signin {
+        width: 90%;
+    }
 
 }
